@@ -1,9 +1,6 @@
 C-Core
 ======
 
-Kodi's Java game engine - Very basic
-====================================
-
 - Ideas -
 =========
 
@@ -27,3 +24,4 @@ Kodi's Java game engine - Very basic
   * Color
   * Transparency
   * Collision type
+5. Wiki for documentation
