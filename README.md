@@ -7,21 +7,23 @@ Kodi's Java game engine - Very basic
 - Ideas -
 =========
 
-1. Basic window control via short commands
-  a. Window size
-  b. Title
+1. Simple window control
+  * Window size
+  * Title
+  * Background type
 2. Resource folder system for loading needed assets
+  * Possible pre-generation of needed assets for simplicity
 3. Simple sprite management system
-  a. Loading via resource folders
-  b. Positioning
-  c. Animation type
-  d. Size
-  e. Color
-  f. Transparency
+  * Loading via resource folders
+  * Positioning
+  * Animation type
+  * Size
+  * Color
+  * Transparency
 4. Simple tile management system
-  a. Loading via resource folders
-  b. Positioning
-  c. Size
-  d. Color
-  e. Transparency
-  f. Collision type
+  * Loading via resource folders
+  * Positioning
+  * Size
+  * Color
+  * Transparency
+  * Collision type
