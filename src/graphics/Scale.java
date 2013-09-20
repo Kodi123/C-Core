@@ -1,11 +1,11 @@
-package src.window;
+package src.graphics;
 
 import java.awt.Dimension;
 
 public class Scale {
 	private static final long serialVersionUID = 1L;
 	
-	public Dimension dimension;
+	private Dimension dimension;
 	
 	public Dimension getDimension(String aspect, int width) {
 		

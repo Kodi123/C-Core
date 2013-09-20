@@ -1,4 +1,4 @@
-package window;
+package src.graphics;
 
 import java.util.Random;
 
@@ -19,10 +19,10 @@ public class Screen {
 		MAP_SIZE = size;
 		pixels = new int[width * height];
 		
-		for ( int i = 0; i < MAP_SIZE * MAP_SIZE; i++ ) {
+		/*for ( int i = 0; i < MAP_SIZE * MAP_SIZE; i++ ) {
 			tiles[i] = random.nextInt(0xffffff);
 			tiles[0] = 0;
-		}
+		}*/
 	}
 	
 	public void clear() {
@@ -30,5 +30,6 @@ public class Screen {
 			pixels[i] = 0;
 		}
 	}
+
 
 }
