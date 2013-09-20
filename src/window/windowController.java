@@ -17,7 +17,6 @@ public class windowController extends Canvas  {
 	
 	private JFrame frame;
 	private Screen screen;
-	private static Scale scale;
 	
 	public windowController(Dimension screenScale, int size, String title) {
 		this.title = title;
