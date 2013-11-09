@@ -1,13 +1,14 @@
 package src;
 
-import src.graphics.Scale;
-import src.window.WindowController;
-
+import src.Graphics.Scale;
+import src.Window.WindowController;
+import src.Utils.Config;
 
 public class C_Core {
 	
 	WindowController window;
 	Scale scale;
+	Config config;
 	
 	public static void main(String[] args) { 
 		new C_Core();
@@ -19,6 +20,7 @@ public class C_Core {
 		window = new WindowController(scale.getDimension("", 800), 64,"Meep!");
 		//window.setInfoType("Null");
 		
+		config = new Config();
 	}
 
 }
