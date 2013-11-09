@@ -1,3 +1,6 @@
+/*
+ * 
+ */
 package src.graphics;
 
 import java.util.Random;
@@ -5,10 +8,13 @@ import java.util.Random;
 public class Screen {
 	
 	public int width, height;
+	
 	public int MAP_SIZE;
+	
 	public int MAP_SIZE_MASK = MAP_SIZE - 1;
 	
 	public int[] pixels;
+	
 	public int[] tiles = new int[MAP_SIZE * MAP_SIZE];
 	
 	private Random random = new Random();

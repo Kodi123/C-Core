@@ -9,19 +9,26 @@ import src.graphics.Scale;
 import src.graphics.Screen;
 
 
-public class windowController extends Canvas  {
+public class WindowController extends Canvas  {
 	private static final long serialVersionUID = 1L;
 	
-	public int width;
-	public int height;
-	public int size;
-	public String title;
+	public int width, height, size;
 	
-	private JFrame frame;
+	public String title;
+	public JFrame frame;
+	
 	private Screen screen;
+	private WindowType Type;
 	private static Scale scale;
 	
-	public windowController(Dimension screenScale, int size, String title) {
+	/**
+	 * Is the window constructor to make a basic window.
+	 * 
+	 * @param screenScale	A dimension object that takes: resolution type and width.
+	 * @param size			Size of the types.  64 is 64 pixels. (WIP)
+	 * @param title			Title in string form. (DUH?)
+	 */
+	public WindowController(Dimension screenScale, int size, String title) {
 		this.title = title;
 		this.size = size;
 		
@@ -31,9 +38,16 @@ public class windowController extends Canvas  {
 		frame = new JFrame();
 		setTitle(this.title);
 		
+		frame.setResizable(false);
+		frame.add(this);
+		frame.pack();
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.setLocationRelativeTo(null);
+		frame.setVisible(true);
+		
 	}
 	
-	public static void main(String[] args) {
+/*	public static void main(String[] args) {
 		scale = new Scale();
 		windowController window = new windowController(scale.getDimension("", 800),64,"Meep");
 		window.frame.setResizable(false);
@@ -42,9 +56,21 @@ public class windowController extends Canvas  {
 		window.frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		window.frame.setLocationRelativeTo(null);
 		window.frame.setVisible(true);
-	}
+	}*/
 	
 	public void setTitle(String title) {
 		frame.setTitle(title);
+	}
+
+	public void getInfoType(Object windowType) {
+		
+		return;
+		
+	}
+
+	public void setInfoType(String string) {
+
+
+		
 	}
 }
