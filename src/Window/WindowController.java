@@ -1,12 +1,12 @@
-package src.window;
+package src.Window;
 
 import java.awt.Canvas;
 import java.awt.Dimension;
 
 import javax.swing.JFrame;
 
-import src.graphics.Scale;
-import src.graphics.Screen;
+import src.Graphics.Scale;
+import src.Graphics.Screen;
 
 
 public class WindowController extends Canvas  {

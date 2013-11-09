@@ -1,4 +1,4 @@
-package src.window;
+package src.Window;
 
 public class WindowType {
 	

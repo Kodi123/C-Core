@@ -1,7 +1,7 @@
 /*
  * 
  */
-package src.graphics;
+package src.Graphics;
 
 import java.util.Random;
 
